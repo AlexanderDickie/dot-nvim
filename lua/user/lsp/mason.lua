@@ -1,12 +1,14 @@
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright
 local servers = {
 	"sumneko_lua",
 	-- "cssls",
-	-- "html",
-	-- "tsserver",
+	"html",
+	"tsserver",
 	"pyright",
 	-- "bashls",
 	"jsonls",
 	-- "yamlls",
+  "rust-analyzer",
 }
 
 local settings = {
@@ -18,8 +20,8 @@ local settings = {
 			package_uninstalled = "◍",
 		},
 	},
+  max_concurrent_installers = 4,
 	log_level = vim.log.levels.INFO,
-	max_concurrent_installers = 4,
 }
 
 require("mason").setup(settings)
