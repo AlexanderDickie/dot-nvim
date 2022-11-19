@@ -1,0 +1,5 @@
+return {
+  haskell = {
+    formattingProvider = "fourmolu"
+  }
+}

@@ -1,4 +1,4 @@
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 local servers = {
 	"sumneko_lua",
 	-- "cssls",
@@ -7,9 +7,12 @@ local servers = {
 	"pyright",
 	-- "bashls",
 	"jsonls",
-	-- "yamlls",
-  "rust-analyzer",
+	"rust_analyzer",
+    "typescript-language-server",
+    "hls"
 }
+
+
 
 local settings = {
 	ui = {
