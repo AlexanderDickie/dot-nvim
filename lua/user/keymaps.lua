@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -71,6 +70,10 @@ vim.keymap.set('n', 'fh', builtin.help_tags, {})
 -- Nvim-Tree
 keymap('n', '<leader>j', ':NvimTreeToggle<cr>', opts)
 keymap('n', '<leader>k', ':NvimTreeFocus<cr>', opts)
+
+-- Diagnostics
+keymap('n', "<C-k>", ":lua vim.diagnostic.goto_next()<cr>", opts)
+keymap('n', "<C-p>", ":lua vim.diagnostic.goto_prev()<cr>", opts)
 
 -- Terminal --
 -- Better terminal navigation

@@ -9,7 +9,8 @@ local servers = {
 	"jsonls",
 	"rust_analyzer",
     "typescript-language-server",
-    "hls"
+    "hls",
+    "texlab"
 }
 
 
