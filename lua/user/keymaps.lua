@@ -72,7 +72,7 @@ keymap('n', '<leader>j', ':NvimTreeToggle<cr>', opts)
 keymap('n', '<leader>k', ':NvimTreeFocus<cr>', opts)
 
 -- Diagnostics
-keymap('n', "<C-k>", ":lua vim.diagnostic.goto_next()<cr>", opts)
+keymap('n', "<C-h>", ":lua vim.diagnostic.goto_next()<cr>", opts)
 keymap('n', "<C-p>", ":lua vim.diagnostic.goto_prev()<cr>", opts)
 
 -- Terminal --
