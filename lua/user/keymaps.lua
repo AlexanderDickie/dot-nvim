@@ -75,6 +75,15 @@ keymap('n', '<leader>k', ':NvimTreeFocus<cr>', opts)
 keymap('n', "<C-h>", ":lua vim.diagnostic.goto_next()<cr>", opts)
 keymap('n', "<C-p>", ":lua vim.diagnostic.goto_prev()<cr>", opts)
 
+
+-- Copilot
+keymap("i", "<C-f>", "<C-o>:Copilot enable<cr>", opts)
+keymap("i", "<C-d>", "<C-o>:Copilot disable<cr>", opts)
+-- vim.keymap.set('i', '<C-j>', '<Plug>(copilot-suggest)')
+-- vim.api.nvim_set_keymap("n", "<C-q>", "<cmd>lua copilot.accept('')<CR>", {silent = true})
+-- vim.g.copilot_no_tab_map = 1
+-- vim.api.nvim_set_keymap()
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
