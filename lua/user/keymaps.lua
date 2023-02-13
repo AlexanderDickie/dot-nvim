@@ -80,6 +80,7 @@ keymap('n', "<C-p>", ":lua vim.diagnostic.goto_prev()<cr>", opts)
 keymap("i", "<C-d>", "<C-o>:Copilot enable<cr>", opts)
 keymap("i", "<C-s>", "<C-o>:Copilot disable<cr>", opts)
 keymap('i', '<C-f>', '<Plug>(copilot-suggest)', opts)
+
 -- vim.api.nvim_set_keymap("n", "<C-q>", "<cmd>lua copilot.accept('')<CR>", {silent = true})
 -- vim.g.copilot_no_tab_map = 1
 -- vim.api.nvim_set_keymap()
