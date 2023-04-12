@@ -10,7 +10,8 @@ local servers = {
 	"rust_analyzer",
     "typescript-language-server",
     "hls",
-    "texlab"
+    "texlab",
+    "clangd",
 }
 
 
