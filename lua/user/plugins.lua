@@ -98,8 +98,12 @@ return packer.startup(function(use)
     use 'karb94/neoscroll.nvim'
 
     -- co pilot
-    -- use { "github/copilot.vim" }
-    use { "zbirenbaum/copilot.lua" }
+    use { "github/copilot.vim" }
+    -- use { "zbirenbaum/copilot.lua" }
+
+
+    -- DAP
+    use 'mfussenegger/nvim-dap'
 
 
     -- Automatically set up your configuration after cloning packer.nvim

@@ -8,10 +8,11 @@ local servers = {
 	-- "bashls",
 	"jsonls",
 	"rust_analyzer",
-    "typescript-language-server",
+    "tsserver",
     "hls",
     "texlab",
     "clangd",
+    "omnisharp",
 }
 
 
